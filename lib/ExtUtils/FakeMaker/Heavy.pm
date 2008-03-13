@@ -2,6 +2,8 @@ use strict;
 use warnings;
 package ExtUtils::FakeMaker::Heavy;
 
+our $VERSION = '0.002';
+
 use Carp ();
 use Text::Template;
 
@@ -56,7 +58,7 @@ author:
 generated_by: ExtUtils::FakeMaker version {{ $ExtUtils::FakeMaker::VERSION }}
 license: unknown{{ if (my %requires = $dist->requires) {
   $OUT .= "\nrequires:";
-  $OUT .= sprintf "\n  %s: %s", $_, ($requires{$_} // '~') for keys %requires;
+  $OUT .= sprintf "\n  %s: %s", $_, (defined $requires{$_} ? $requires{$_} : '~') for keys %requires;
   chomp $OUT;
 }
 return;

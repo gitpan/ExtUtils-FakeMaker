@@ -1,5 +1,5 @@
 package ExtUtils::FakeMaker;
-use 5.010;
+use 5.008;
 use Moose;
 
 =head1 NAME
@@ -8,11 +8,11 @@ ExtUtils::FakeMaker - build fake dists for testing CPAN tools
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =cut
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use ExtUtils::FakeMaker::Dist;
 
