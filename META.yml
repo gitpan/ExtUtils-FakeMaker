@@ -1,0 +1,27 @@
+--- 
+abstract: build fake dists for testing CPAN tools
+author: 
+  - Ricardo Signes <rjbs@cpan.org>
+distribution_type: module
+generated_by: Module::Install version 0.68
+license: perl
+meta-spec: 
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
+name: ExtUtils-FakeMaker
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Archive::Any::Create: 0
+  File::Next: 0
+  File::Path: 0
+  File::Spec: 0
+  File::Temp: 0
+  Moose: 0
+  Text::Template: 0
+  YAML::Syck: 0
+  perl: 5.10.0
+tests: t/*.t xt/*.t
+version: 0.001
